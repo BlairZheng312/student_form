@@ -1,4 +1,4 @@
-import React, { useCallback, useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './index.css'
 import StudentContext from '../../store/StudentContext'
 import useFetch from '../../hooks/useFetch'
@@ -54,7 +54,7 @@ export default function StudentForm(props) {
 
                 <td>
                     {props.student && <>
-                        <button onClick={props.cancelEdit}>Cancel</button>
+                        <button onClick={props.cancel}>Cancel</button>
                         <button onClick={editHandler}>Update</button>
                     </>
                     }
